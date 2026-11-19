@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# EDIT: if your GitHub username is not "the-vivekkumar", change the host below.
+Sitemap: https://the-vivekkumar.github.io/sitemap.xml

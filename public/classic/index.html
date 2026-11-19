@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vivek T K | AI/ML developer and researcher</title>
+  <meta name="description" content="Portfolio of Vivek T K, an MCA student in Mysore, India. Published a survey on autonomous rocket landing (guidance, navigation, control and sensor fusion) and builds machine learning, generative AI and full-stack projects.">
+  <meta name="author" content="Vivek T K">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="index, follow">
+
+  <!-- EDIT: if your GitHub username is not "the-vivekkumar", replace the-vivekkumar.github.io in the canonical, og:url, og:image, JSON-LD, robots.txt and sitemap.xml. -->
+  <link rel="canonical" href="https://the-vivekkumar.github.io/classic/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vivek T K">
+  <meta property="og:title" content="Vivek T K | AI/ML developer and researcher">
+  <meta property="og:description" content="MCA student in Mysore building machine learning models and AI-powered software. Published author on autonomous rocket landing.">
+  <meta property="og:url" content="https://the-vivekkumar.github.io/classic/">
+  <meta property="og:image" content="https://the-vivekkumar.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vivek T K, AI/ML developer and researcher">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vivek T K | AI/ML developer and researcher">
+  <meta name="twitter:description" content="MCA student in Mysore building machine learning models and AI-powered software. Published author on autonomous rocket landing.">
+  <meta name="twitter:image" content="https://the-vivekkumar.github.io/og-image.png">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://the-vivekkumar.github.io/#vivek",
+        "name": "Vivek T K",
+        "url": "https://the-vivekkumar.github.io/",
+        "email": "mailto:vivek28666@gmail.com",
+        "description": "MCA student who builds machine learning models and AI-powered software, with a published paper on autonomous rocket landing.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Mysore", "addressRegion": "Karnataka", "addressCountry": "IN" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "SBRR Mahajana First Grade College PG Wing" },
+          { "@type": "CollegeOrUniversity", "name": "Seshadripuram Degree College" }
+        ],
+        "knowsAbout": ["Artificial intelligence", "Machine learning", "Python", "Software development", "Robotics", "Autonomous systems", "Computer science"],
+        "sameAs": ["https://github.com/the-vivekkumar", "https://www.linkedin.com/in/-vivek-/"]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "name": "Autonomous Rocket Landing: A Comprehensive Survey of Guidance, Navigation, Control Algorithms and Sensor Fusion Techniques in SpaceX Falcon 9",
+        "author": [
+          { "@id": "https://the-vivekkumar.github.io/#vivek" },
+          { "@type": "Person", "name": "Dr. Anisha Kumar" }
+        ],
+        "datePublished": "2026-09-26",
+        "url": "https://doi.org/10.55041/ijcope.v2i9.196",
+        "sameAs": "https://doi.org/10.55041/ijcope.v2i9.196",
+        "isPartOf": { "@type": "PublicationIssue", "issueNumber": "9", "datePublished": "2026-09", "isPartOf": { "@type": "PublicationVolume", "volumeNumber": "2", "isPartOf": { "@type": "Periodical", "name": "International Journal of Creative and Open Research in Engineering and Management" } } }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7.5 8.5 6 8.5-6"/></g></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0-4-4m4 4 4-4M4.5 17v2a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-2"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A2.5 2.5 0 0 1 7.5 4H16"/></g></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 7.5h16M4 12h16M4 16.5h16"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="m6 6 12 12M18 6 6 18"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0-6 6m6-6 6 6"/></symbol>
+      <symbol id="i-replay" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 12a8 8 0 1 0 2.6-5.9M4 4v4.5h4.5"/></symbol>
+      <!-- Interest icons -->
+      <symbol id="i-ai" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2.5"/><path d="M9.5 3v3M14.5 3v3M9.5 18v3M14.5 18v3M3 9.5h3M3 14.5h3M18 9.5h3M18 14.5h3"/><path d="m10 14 2-5 2 5m-3.2-1.5h2.4"/></g></symbol>
+      <symbol id="i-ml" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="7" r="2"/><circle cx="19" cy="17" r="2"/><path d="m6.7 7 3.6 3.9M6.7 17l3.6-3.9M14 11l3.3-3M14 13l3.3 3"/></g></symbol>
+      <symbol id="i-python" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14"/></g></symbol>
+      <symbol id="i-dev" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="m7.5 10 2.5 2.5L7.5 15M12.5 15h4"/></g></symbol>
+      <symbol id="i-robot" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="8" width="15" height="11" rx="3"/><path d="M12 8V4.5M10 4.5h4M2.5 12.5v3M21.5 12.5v3"/><circle cx="9" cy="13.5" r="1"/><circle cx="15" cy="13.5" r="1"/></g></symbol>
+      <symbol id="i-nav" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 19 21l-7-4-7 4 7-18.5Z"/></g></symbol>
+      <symbol id="i-cs" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 9 4.5-9 4.5L3 8l9-4.5ZM3 12.5l9 4.5 9-4.5M3 16.5l9 4.5 9-4.5"/></g></symbol>
+    </defs>
+  </svg>
+
+  <div class="lights" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- Descent gauge: shows where you are on the page, and jumps to a section. Hidden on small screens. -->
+  <nav class="gauge" id="gauge" aria-hidden="true">
+    <div class="gauge__rail"><span class="gauge__fill"></span><span class="gauge__dot"></span></div>
+    <ol>
+      <li data-for="about"><a href="#about" tabindex="-1"><span>About</span></a></li>
+      <li data-for="projects"><a href="#projects" tabindex="-1"><span>Projects</span></a></li>
+      <li data-for="research"><a href="#research" tabindex="-1"><span>Research</span></a></li>
+      <li data-for="skills"><a href="#skills" tabindex="-1"><span>Skills</span></a></li>
+      <li data-for="education"><a href="#education" tabindex="-1"><span>Education</span></a></li>
+      <li data-for="certifications"><a href="#certifications" tabindex="-1"><span>Certifications</span></a></li>
+      <li data-for="achievements"><a href="#achievements" tabindex="-1"><span>Achievements</span></a></li>
+      <li data-for="contact"><a href="#contact" tabindex="-1"><span>Contact</span></a></li>
+    </ol>
+  </nav>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <nav class="nav__bar" aria-label="Primary">
+      <a class="nav__brand" href="#top" aria-label="Vivek T K, back to top">Vivek T K</a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="nav__cta" href="#contact">Contact me</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" aria-label="Open menu">
+        <svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </nav>
+    <div class="nav__sheet glass" id="nav-sheet" hidden>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <h1 id="hero-title">Vivek T K</h1>
+          <p class="hero__roles">AI/ML developer, AI researcher, data science enthusiast and innovator.</p>
+          <p class="hero__lead">I'm an MCA student in Mysore building machine learning models and AI-powered software with Python, scikit-learn and the Gemini API. I'm also a published author on autonomous rocket landing.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View projects</a>
+            <a class="btn btn--glass" id="resume-link" href="../Vivek_T_K_Resume.pdf" download>
+              <svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>Resume
+            </a>
+            <a class="btn btn--glass" id="cv-link" href="../Vivek_T_K_CV.pdf" download>
+              <svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>CV
+            </a>
+            <a class="btn btn--ghost" href="#contact">Contact me</a>
+          </div>
+          <ul class="hero__social" aria-label="Social links">
+            <li><a href="https://github.com/the-vivekkumar" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/-vivek-/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="mailto:vivek28666@gmail.com" aria-label="Email Vivek"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
+
+        <figure class="sim" aria-labelledby="sim-caption">
+          <canvas id="sim-canvas" tabindex="0" role="img" aria-label="Animated simulation of a rocket booster landing on a pad. Use the left and right arrow keys, or move your pointer, to move the pad."></canvas>
+          <dl class="sim__hud" aria-hidden="true">
+            <div><dt>Altitude</dt><dd id="hud-alt">0 m</dd></div>
+            <div><dt>Descent</dt><dd id="hud-vel">0 m/s</dd></div>
+            <div><dt>Thrust</dt><dd id="hud-thr">0%</dd></div>
+            <div><dt>Gimbal</dt><dd id="hud-ang">0°</dd></div>
+          </dl>
+          <p class="sim__state" id="hud-state" aria-hidden="true">Coasting</p>
+          <figcaption id="sim-caption">
+            <span>A PID controller steers a simulated booster onto the pad. Move your pointer to move the pad. Illustrative only, not flight data.</span>
+            <button class="sim__btn" type="button" id="sim-replay"><svg class="ico" aria-hidden="true"><use href="#i-replay"/></svg><span>Relaunch</span></button>
+          </figcaption>
+        </figure>
+
+        <nav class="hero__index" aria-label="Most important work">
+          <a href="#projects">
+            <b>Projects</b>
+            <span>An AI voice assistant, an AI video check, an ML crop advisor and a subscription tracker.</span>
+          </a>
+          <a href="#research">
+            <b>Published research</b>
+            <span>A peer-reviewed survey of how Falcon 9 boosters land themselves, 2026.</span>
+          </a>
+          <a href="#certifications">
+            <b>Certifications</b>
+            <span>23 certificates across data, cloud, software and security.</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section__grid">
+        <div class="section__head">
+          <h2 id="about-title">About</h2>
+        </div>
+        <div class="section__body reveal">
+          <div class="prose">
+            <p class="prose__lead">I like problems where software meets the physical world: how a booster lands itself, how an assistant remembers a conversation, how a dataset turns into a decision.</p>
+            <p>I'm a Master of Computer Applications student at SBRR Mahajana First Grade College PG Wing in Mysore. I have completed two internships, in data science and in cyber security, built machine learning and full-stack projects, and collected certifications across data, cloud, software and security.</p>
+          </div>
+
+          <dl class="facts glass">
+            <div><dt>Based in</dt><dd>Mysore, Karnataka, India</dd></div>
+            <div><dt>Studying</dt><dd>MCA, expected 2027</dd></div>
+            <div><dt>Experience</dt><dd>Two internships, 2024 and 2025</dd></div>
+            <div><dt>Focus</dt><dd>AI, machine learning, autonomous systems</dd></div>
+          </dl>
+
+          <h3 class="subhead">Technical interests</h3>
+          <ul class="interests">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-ai"/></svg><div><b>Artificial intelligence</b><span>Language-model applications built on Google Gemini.</span></div></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-ml"/></svg><div><b>Machine learning</b><span>Classification, regression and text similarity with scikit-learn.</span></div></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-python"/></svg><div><b>Python</b><span>Pandas and NumPy for analysis, Flask for web apps.</span></div></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-dev"/></svg><div><b>Software development</b><span>React, Node.js and Express, with REST APIs and databases.</span></div></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-robot"/></svg><div><b>Robotics</b><span>Sensors, actuators and feedback control loops.</span></div></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-nav"/></svg><div><b>Autonomous systems</b><span>Guidance, navigation and control: how a vehicle decides where to go and gets there on its own.</span></div></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-cs"/></svg><div><b>Computer science</b><span>Algorithms and software engineering through my MCA.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section__grid">
+        <div class="section__head">
+          <h2 id="projects-title">Projects</h2>
+          <p>Four projects, each with its GitHub repository.</p>
+        </div>
+        <div class="section__body reveal">
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button type="button" class="chip-btn" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="chip-btn" data-filter="ml" aria-pressed="false">AI and ML</button>
+            <button type="button" class="chip-btn" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+          </div>
+
+          <div class="project-list" id="project-list">
+
+            <!-- The four featured projects, in this order. Each links to its GitHub repository. -->
+            <article class="project project--row" data-tags="fullstack" aria-labelledby="p-tracker">
+              <div class="row__main">
+                <h3 id="p-tracker">Subscription Tracker</h3>
+                <p class="project__lead">A simple, professional app for keeping track of every subscription: what you pay each month and year, and when each one renews.</p>
+                <dl class="row__facts">
+                  <div><dt>Objective</dt><dd>Give one clear place to see recurring costs and never miss a renewal.</dd></div>
+                  <div><dt>Key features</dt><dd>
+                    <ul class="bullets">
+                      <li>Email and Google sign-in with protected routes</li><li>Per-user data in Supabase PostgreSQL with row-level security</li><li>Monthly and yearly spend dashboard with search and filters</li><li>Reminder emails 30, 14, 7, 3 and 1 days before renewal, and on the day</li>
+                    </ul>
+                  </dd></div>
+                </dl>
+                <ul class="chips" aria-label="Technologies"><li>TypeScript</li><li>Next.js</li><li>React 19</li><li>Tailwind CSS</li><li>Supabase</li><li>PostgreSQL</li><li>Resend</li></ul>
+                <div class="project__links">
+                  <a class="btn btn--glass btn--sm" href="https://github.com/the-vivekkumar/Subscription-Tracker" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>View on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+                </div>
+              </div>
+              <figure class="flowbox">
+                <figcaption>How it works</figcaption>
+                <ol class="flow">
+                  <li><b>Sign in</b><span>Email or Google</span></li><li><b>Subscriptions</b><span>Cost, cycle, renewal date, category</span></li><li><b>Dashboard</b><span>Spend and upcoming renewals</span></li><li><b>Renewals</b><span>Next 7 days at a glance</span></li><li><b>Email reminders</b><span>Sent through Resend</span></li>
+                </ol>
+              </figure>
+            </article>
+
+            <article class="project project--flagship glass" data-tags="ml fullstack" aria-labelledby="p-jarvis">
+              <div class="project__head">
+                <h3 id="p-jarvis">JARVIS AI Voice Assistant</h3>
+                <span class="badge badge--soft">AI project</span>
+              </div>
+              <p class="project__lead">A voice-based personal AI assistant inspired by Iron Man's JARVIS, built with React, Node.js and the Google Gemini API. You talk or type, it answers, and it remembers facts across sessions.</p>
+
+              <div class="arch" id="arch" data-active="ui">
+                <p class="arch__prompt" id="arch-prompt">Select a part of the system to see what it does.</p>
+                <div class="arch__map" role="group" aria-labelledby="arch-prompt">
+                  <button type="button" class="node node--ui" data-node="ui" aria-pressed="true">
+                    <b>Interface</b>
+                    <span>React 18, Vite, Zustand and Framer Motion</span>
+                    <span>Speech in, speech out</span>
+                  </button>
+                  <i class="link link--a" data-a="ui api" aria-hidden="true"></i>
+                  <button type="button" class="node node--api" data-node="api" aria-pressed="false">
+                    <b>Express REST API</b>
+                    <span>Routes, controllers and services</span>
+                    <span class="mods"><em>AI</em><em>Memory</em><em>Settings</em><em>Voice</em><em>System</em></span>
+                  </button>
+                  <i class="link link--b" data-a="api ai" aria-hidden="true"></i>
+                  <button type="button" class="node node--ai" data-node="ai" aria-pressed="false">
+                    <b>Google Gemini</b>
+                    <span>Writes each reply</span>
+                  </button>
+                  <i class="link link--c" data-a="api db" aria-hidden="true"></i>
+                  <button type="button" class="node node--db" data-node="db" aria-pressed="false">
+                    <b>SQLite (sql.js)</b>
+                    <span>Sessions, messages and memory</span>
+                  </button>
+                </div>
+                <div class="arch__text" aria-live="polite">
+                  <p data-panel="ui">A React 18 and Vite front end with Zustand for state and Framer Motion for animation. It draws the holographic heads-up display and handles speech input and output through the browser's Web Speech API.</p>
+                  <p data-panel="api">An Express REST API organized as routes, controllers and services across five modules: AI, memory, settings, voice and system. Helmet headers, rate limiting and request validation protect it, and the API key stays on the server.</p>
+                  <p data-panel="ai">Google Gemini (gemini-2.5-flash) writes each reply from the recent chat history and the facts the assistant has stored about you.</p>
+                  <p data-panel="db">SQLite, running through sql.js, stores sessions, messages, memory and settings. The data persists across restarts, so the assistant continues where it left off.</p>
+                </div>
+              </div>
+
+              <div class="project__cols">
+                <section class="col col--obj" aria-labelledby="p-jarvis-obj">
+                  <h4 id="p-jarvis-obj">Objective</h4>
+                  <p>A personal assistant you can speak to hands-free, that answers with a language model and keeps its memory between sessions.</p>
+                </section>
+                <section class="col col--how" aria-labelledby="p-jarvis-how">
+                  <h4 id="p-jarvis-how">How it works</h4>
+                  <p>The interface sends your text, or your transcribed speech, to the Express API. The API adds chat history and stored memory, asks Gemini for a reply, saves the exchange in SQLite and returns the answer to be shown and spoken.</p>
+                </section>
+                <section class="col col--feat" aria-labelledby="p-jarvis-feat">
+                  <h4 id="p-jarvis-feat">Key features</h4>
+                  <ul class="bullets">
+                    <li>Speech input and output in the browser</li>
+                    <li>Memory that persists across sessions</li>
+                    <li>Five backend modules with a clean service layer</li>
+                    <li>Rate limiting, validation and secured API keys</li>
+                  </ul>
+                </section>
+              </div>
+
+              <ul class="chips" aria-label="Technologies">
+                <li>React 18</li><li>Vite</li><li>Zustand</li><li>Framer Motion</li><li>Node.js</li><li>Express</li><li>Google Gemini API</li><li>SQLite (sql.js)</li><li>Web Speech API</li><li>Electron</li>
+              </ul>
+              <div class="project__links">
+                <a class="btn btn--glass btn--sm" href="https://github.com/the-vivekkumar/JARVIS-AI-Voice-Assistant" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>View on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+              </div>
+            </article>
+
+            <article class="project project--row" data-tags="ml" aria-labelledby="p-verify">
+              <div class="row__main">
+                <div class="project__head"><h3 id="p-verify">Verify Net Video</h3><span class="badge badge--soft">AI project</span></div>
+                <p class="project__lead">A web-based AI video analysis tool that evaluates social media video URLs and gives an estimate of how authentic they look. Results are experimental and may not be fully accurate.</p>
+                <dl class="row__facts">
+                  <div><dt>Objective</dt><dd>Help people check a social media video before they trust or share it.</dd></div>
+                  <div><dt>Key features</dt><dd>
+                    <ul class="bullets">
+                      <li>Works from a social media video URL</li><li>AI-based authenticity estimate</li><li>Clear note that results are experimental and may not be fully accurate</li>
+                    </ul>
+                  </dd></div>
+                </dl>
+                <ul class="chips" aria-label="Technologies"><li>HTML</li><li>AI video analysis</li></ul>
+                <div class="project__links">
+                  <a class="btn btn--glass btn--sm" href="https://github.com/the-vivekkumar/Verify-Net-Video" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>View on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+                </div>
+              </div>
+              <figure class="flowbox">
+                <figcaption>How it works</figcaption>
+                <ol class="flow">
+                  <li><b>Video URL</b><span>Paste a social media link</span></li><li><b>AI analysis</b><span>The tool evaluates the video</span></li><li><b>Authenticity estimate</b><span>How authentic the video appears</span></li>
+                </ol>
+              </figure>
+            </article>
+
+            <article class="project project--row" data-tags="ml" aria-labelledby="p-crop">
+              <div class="row__main">
+                <div class="project__head"><h3 id="p-crop">Crop Recommendation System</h3><span class="badge badge--soft">ML project</span></div>
+                <p class="project__lead">An ML-powered web app that gives real-time crop recommendations from soil and environmental data.</p>
+                <dl class="row__facts">
+                  <div><dt>Objective</dt><dd>Turn soil and climate readings into a crop recommendation a farmer can act on.</dd></div>
+                  <div><dt>Key features</dt><dd>
+                    <ul class="bullets">
+                      <li>Exploratory data analysis and missing-value checks before modeling</li><li>Random Forest classifier evaluated with accuracy and a classification report</li><li>Real-time predictions in a Flask web app</li>
+                    </ul>
+                  </dd></div>
+                </dl>
+                <ul class="chips" aria-label="Technologies"><li>Python</li><li>scikit-learn</li><li>Flask</li><li>Random Forest</li><li>Pandas</li><li>NumPy</li></ul>
+                <div class="project__links">
+                  <a class="btn btn--glass btn--sm" href="https://github.com/the-vivekkumar/Crop-Recommendation-System" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>View on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+                </div>
+              </div>
+              <figure class="flowbox">
+                <figcaption>How it works</figcaption>
+                <ol class="flow">
+                  <li><b>Soil and climate data</b><span>Nitrogen, phosphorus, potassium, temperature and more</span></li><li><b>Random Forest model</b><span>100 trees, 80/20 train-test split</span></li><li><b>Flask web app</b><span>Serves predictions in real time</span></li><li><b>Crop recommendation</b><span>The best-suited crop</span></li>
+                </ol>
+              </figure>
+            </article>
+
+          </div>
+          <p class="empty" id="project-empty" hidden>No projects match this filter yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research and publications -->
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="section__grid">
+        <div class="section__head">
+          <h2 id="research-title">Research and publications</h2>
+          <p>One published, peer-reviewed paper.</p>
+        </div>
+        <div class="section__body reveal">
+          <article class="paper glass" aria-labelledby="paper-title">
+            <p class="paper__status"><span class="badge">Published</span><span class="badge badge--soft">Peer-reviewed</span></p>
+            <h3 id="paper-title">Autonomous Rocket Landing: A Comprehensive Survey of Guidance, Navigation, Control Algorithms, and Sensor Fusion Techniques in SpaceX Falcon-9</h3>
+            <dl class="paper__meta">
+              <div><dt>Authors</dt><dd>Vivek T K and Dr. Anisha Kumar</dd></div>
+              <div><dt>Journal</dt><dd>International Journal of Creative and Open Research in Engineering and Management (IJCOPE)</dd></div>
+              <div><dt>Issue</dt><dd>Volume 2, issue 9, September 2026, pages 1 to 9</dd></div>
+              <div><dt>DOI</dt><dd><a href="https://doi.org/10.55041/ijcope.v2i9.196" target="_blank" rel="noopener noreferrer">10.55041/ijcope.v2i9.196<span class="sr-only"> (opens in a new tab)</span></a></dd></div>
+              <div><dt>Certificate</dt><dd>Certificate of Publication IJCOPE/26/09/196</dd></div>
+            </dl>
+
+            <div class="paper__cols">
+              <div>
+                <h4>What it covers</h4>
+                <ul class="bullets">
+                  <li>The guidance, navigation and control framework: trajectory planning, state estimation and actuation.</li>
+                  <li>Sensor fusion across radar altimeters, GPS receivers, inertial measurement units and star trackers, using an Extended Kalman Filter.</li>
+                  <li>The PID control law behind the powered landing burn, with annotated pseudocode.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Also in the paper</h4>
+                <p>A four-phase landing model, a comparison with related work, and open challenges such as real-time computation, changing vehicle mass and landing on moving drone ships. Reinforcement-learning-based guidance is covered as future work.</p>
+              </div>
+            </div>
+
+            <ul class="chips" aria-label="Keywords">
+              <li>Autonomous landing</li><li>SpaceX Falcon 9</li><li>Guidance, navigation and control</li><li>PID control</li><li>Sensor fusion</li><li>Reusable launch vehicles</li><li>Powered descent guidance</li><li>Kalman filter</li>
+            </ul>
+            <div class="paper__actions">
+              <a class="btn btn--primary btn--sm" href="https://doi.org/10.55041/ijcope.v2i9.196" target="_blank" rel="noopener noreferrer">Read the paper<svg class="ico" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+              <button class="btn btn--glass btn--sm" type="button" data-copy="#citation-text" data-copied="Citation copied"><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg>Copy citation</button>
+            </div>
+            <details class="cite">
+              <summary>Show citation text</summary>
+              <p class="citation" id="citation-text">T.K, V. (2026). Autonomous Rocket Landing: A Comprehensive Survey of Guidance, Navigation, Control Algorithms and Sensor Fusion Techniques in SpaceX Falcon 9. International Journal of Creative and Open Research in Engineering and Management, 02(9), 1-9. https://doi.org/10.55041/ijcope.v2i9.196</p>
+            </details>
+          </article>
+
+          <h3 class="subhead">The paper's four-phase landing model</h3>
+          <ol class="phases">
+            <li class="phase">
+              <p class="phase__alt">Above 70 km</p>
+              <h4>Boostback burn</h4>
+              <p>Reverses toward the landing zone.</p>
+              <p class="phase__sys">Sensors: GPS, inertial unit. Actuators: engine gimbal, cold-gas thrusters.</p>
+            </li>
+            <li class="phase">
+              <p class="phase__alt">70 to 30 km</p>
+              <h4>Entry burn</h4>
+              <p>Slows the booster in the upper atmosphere.</p>
+              <p class="phase__sys">Sensors: GPS, inertial unit. Actuators: grid fins, engine gimbal.</p>
+            </li>
+            <li class="phase">
+              <p class="phase__alt">30 to 3 km</p>
+              <h4>Aerodynamic descent</h4>
+              <p>Unpowered glide steered by grid fins.</p>
+              <p class="phase__sys">Sensors: GPS, inertial unit, radar altimeter. Actuators: grid fins.</p>
+            </li>
+            <li class="phase">
+              <p class="phase__alt">3 km to touchdown</p>
+              <h4>Landing burn</h4>
+              <p>PID-controlled powered deceleration. The simulation at the top of this page is a simplified version of this phase.</p>
+              <p class="phase__sys">Sensors: radar altimeter, inertial unit. Actuators: engine gimbal, cold-gas thrusters.</p>
+            </li>
+          </ol>
+          <p class="source">Phase summary from Table III of the paper.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="section__grid">
+        <div class="section__head">
+          <h2 id="skills-title">Technical skills</h2>
+          <p>No self-rated percentages. Each bar shows where a skill has been used and proven.</p>
+        </div>
+        <div class="section__body reveal">
+          <ul class="legend" aria-label="Bar key">
+            <li><i class="swatch swatch--internship"></i>Internship</li>
+            <li><i class="swatch swatch--project"></i>Projects</li>
+            <li><i class="swatch swatch--cert"></i>Certification</li>
+            <li><i class="swatch swatch--pub"></i>Publication</li>
+          </ul>
+
+          <!-- EDIT: each .seg that has class "on" is lit. Add or remove "on" to change what a skill is backed by. -->
+          <ul class="skills">
+            <li class="skill">
+              <h3 class="skill__name">Python</h3>
+              <div class="meter" role="img" aria-label="Backed by an internship and projects">
+                <i class="seg seg--internship on" style="--i:0"></i><i class="seg seg--project on" style="--i:1"></i><i class="seg seg--cert" style="--i:2"></i><i class="seg seg--pub" style="--i:3"></i>
+              </div>
+              <p class="skill__note">Pandas and NumPy for analysis in my internship. scikit-learn and Flask in projects.</p>
+            </li>
+            <li class="skill">
+              <h3 class="skill__name">Data analysis and visualization</h3>
+              <div class="meter" role="img" aria-label="Backed by an internship, projects and a certification">
+                <i class="seg seg--internship on" style="--i:0"></i><i class="seg seg--project on" style="--i:1"></i><i class="seg seg--cert on" style="--i:2"></i><i class="seg seg--pub" style="--i:3"></i>
+              </div>
+              <p class="skill__note">Cleaning, exploratory analysis and Tableau dashboards. Google Data Analytics Certificate.</p>
+            </li>
+            <li class="skill">
+              <h3 class="skill__name">Machine learning</h3>
+              <div class="meter" role="img" aria-label="Backed by projects and a certification">
+                <i class="seg seg--internship" style="--i:0"></i><i class="seg seg--project on" style="--i:1"></i><i class="seg seg--cert on" style="--i:2"></i><i class="seg seg--pub" style="--i:3"></i>
+              </div>
+              <p class="skill__note">Classification, regression and text similarity. Google Cloud badge in BigQuery ML.</p>
+            </li>
+            <li class="skill">
+              <h3 class="skill__name">Generative AI</h3>
+              <div class="meter" role="img" aria-label="Backed by projects and certifications">
+                <i class="seg seg--internship" style="--i:0"></i><i class="seg seg--project on" style="--i:1"></i><i class="seg seg--cert on" style="--i:2"></i><i class="seg seg--pub" style="--i:3"></i>
+              </div>
+              <p class="skill__note">Google Gemini API in JARVIS Two Gemini badges from Google Cloud Skills Boost.</p>
+            </li>
+            <li class="skill">
+              <h3 class="skill__name">Google Cloud and BigQuery</h3>
+              <div class="meter" role="img" aria-label="Backed by certifications">
+                <i class="seg seg--internship" style="--i:0"></i><i class="seg seg--project" style="--i:1"></i><i class="seg seg--cert on" style="--i:2"></i><i class="seg seg--pub" style="--i:3"></i>
+              </div>
+              <p class="skill__note">BigQuery ML inference and Gemini models in BigQuery.</p>
+            </li>
+            <li class="skill">
+              <h3 class="skill__name">Full-stack web development</h3>
+              <div class="meter" role="img" aria-label="Backed by projects and certifications">
+                <i class="seg seg--internship" style="--i:0"></i><i class="seg seg--project on" style="--i:1"></i><i class="seg seg--cert on" style="--i:2"></i><i class="seg seg--pub" style="--i:3"></i>
+              </div>
+              <p class="skill__note">React, Node.js, Express, Flask, REST APIs and SQLite. HTML, PHP and MySQL training from IIT Bombay's Spoken Tutorial Project, and a front-end course from Reliance Foundation.</p>
+            </li>
+            <li class="skill">
+              <h3 class="skill__name">Cyber security</h3>
+              <div class="meter" role="img" aria-label="Backed by an internship and certifications">
+                <i class="seg seg--internship on" style="--i:0"></i><i class="seg seg--project" style="--i:1"></i><i class="seg seg--cert on" style="--i:2"></i><i class="seg seg--pub" style="--i:3"></i>
+              </div>
+              <p class="skill__note">Cyber security internship at Vaishnav Technologies. Ethical hacking, information security and digital forensics courses.</p>
+            </li>
+            <li class="skill">
+              <h3 class="skill__name">Autonomous systems</h3>
+              <div class="meter" role="img" aria-label="Backed by a publication">
+                <i class="seg seg--internship" style="--i:0"></i><i class="seg seg--project" style="--i:1"></i><i class="seg seg--cert" style="--i:2"></i><i class="seg seg--pub on" style="--i:3"></i>
+              </div>
+              <p class="skill__note">Guidance, navigation and control, Kalman-filter sensor fusion and PID control, at survey level.</p>
+            </li>
+          </ul>
+
+          <h3 class="subhead">Tools I use</h3>
+          <dl class="stack">
+            <div><dt>Languages</dt><dd>Python, JavaScript, SQL, HTML, CSS</dd></div>
+            <div><dt>Libraries and frameworks</dt><dd>Pandas, NumPy, scikit-learn, React, Node.js, Express, Flask</dd></div>
+            <div><dt>Platforms and tools</dt><dd>Google BigQuery, Google Gemini API, Tableau, Google Workspace, Git and GitHub, Linux</dd></div>
+            <div><dt>Studied in courses</dt><dd>Java, PHP and MySQL, Linux, ethical hacking</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education and experience -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="section__grid">
+        <div class="section__head">
+          <h2 id="education-title">Education and experience</h2>
+        </div>
+        <div class="section__body reveal">
+          <h3 class="subhead">Education</h3>
+          <ol class="timeline">
+            <li>
+              <p class="timeline__when">Expected 2027</p>
+              <h4>Master of Computer Applications</h4>
+              <p class="timeline__where">SBRR Mahajana First Grade College PG Wing, Mysore</p>
+            </li>
+            <li>
+              <p class="timeline__when">Graduated 2025</p>
+              <h4>Bachelor of Computer Applications</h4>
+              <p class="timeline__where">Seshadripuram Degree College, Mysore</p>
+              <p class="timeline__note">Degree from the University of Mysore, passed with distinction in the May 2025 examination.</p>
+            </li>
+            <li>
+              <p class="timeline__when">2020 to 2022</p>
+              <h4>Pre-University Course, Commerce</h4>
+              <p class="timeline__where">KNC Innovative PU College</p>
+            </li>
+          </ol>
+
+          <h3 class="subhead">Experience</h3>
+          <ol class="timeline">
+            <li>
+              <p class="timeline__when">January to March 2025</p>
+              <h4>Cyber Security Intern</h4>
+              <p class="timeline__where">Vaishnav Technologies</p>
+              <p class="timeline__note">Three-month internship. The certificate is listed under Certifications.</p>
+            </li>
+            <li>
+              <p class="timeline__when">June to August 2024</p>
+              <h4>Data Science Intern</h4>
+              <p class="timeline__where">Unified Mentor, remote</p>
+              <ul class="bullets">
+                <li>Analyzed datasets with Python (Pandas, NumPy) to find trends and insights.</li>
+                <li>Built Tableau dashboards that turn raw data into clear visualizations.</li>
+                <li>Cleaned and pre-processed data, including missing values and inconsistencies.</li>
+                <li>Implemented automated data validation checks to improve accuracy.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section" id="certifications" aria-labelledby="certifications-title">
+      <div class="section__grid">
+        <div class="section__head">
+          <h2 id="certifications-title">Certifications</h2>
+          <p>23 certificates, each listed once with its issuer and date.</p>
+        </div>
+        <div class="section__body reveal">
+          <div class="filters" role="group" aria-label="Filter certifications">
+            <button type="button" class="chip-btn" data-cfilter="all" aria-pressed="true">All (23)</button>
+            <button type="button" class="chip-btn" data-cfilter="data" aria-pressed="false">Data, AI and cloud (6)</button>
+            <button type="button" class="chip-btn" data-cfilter="software" aria-pressed="false">Software (6)</button>
+            <button type="button" class="chip-btn" data-cfilter="security" aria-pressed="false">Cyber security (4)</button>
+            <button type="button" class="chip-btn" data-cfilter="skills" aria-pressed="false">Professional skills (5)</button>
+            <button type="button" class="chip-btn" data-cfilter="internships" aria-pressed="false">Internships (2)</button>
+          </div>
+
+          <div class="cert-groups" id="cert-groups">
+
+            <section class="cert-group" data-cat="data" aria-labelledby="cg-data">
+              <h3 class="subhead" id="cg-data">Data, AI and cloud</h3>
+              <ul class="ledger glass">
+                <li><div><b>Free Microsoft Azure Certification Course</b><span>Intellipaat</span></div><div class="ledger__meta"><time datetime="2026-10-03">3 Oct 2026</time></div></li>
+                <li><div><b>Gemini for Data Scientists and Analysts</b><span>Google Cloud Skills Boost</span><small>Badge</small></div><div class="ledger__meta"><time datetime="2026-07">Jul 2026</time></div></li>
+                <li><div><b>Using BigQuery Machine Learning for Inference</b><span>Google Cloud Skills Boost</span><small>Badge</small></div><div class="ledger__meta"><time datetime="2026-07">Jul 2026</time></div></li>
+                <li><div><b>Work with Gemini Models in BigQuery</b><span>Google Cloud Skills Boost</span><small>Badge</small></div><div class="ledger__meta"><time datetime="2026-07">Jul 2026</time></div></li>
+                <li><div><b>Power BI webinar</b><span>IPCS Global, Mysore</span><small>Certificate of participation</small></div><div class="ledger__meta"><time datetime="2026-02-21">21 Feb 2026</time></div></li>
+                <li><div><b>Google Data Analytics Professional Certificate</b><span>Google, through Coursera</span><small>Eight courses</small></div><div class="ledger__meta"><time datetime="2023-03-15">15 Mar 2023</time><a class="ledger__verify" href="https://coursera.org/verify/professional-cert/6JJ2KLRSYV29" target="_blank" rel="noopener noreferrer">Verify<svg class="ico" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></li>
+              </ul>
+            </section>
+
+            <section class="cert-group" data-cat="software" aria-labelledby="cg-software">
+              <h3 class="subhead" id="cg-software">Software development</h3>
+              <ul class="ledger glass">
+                <li><div><b>Free Online Java Certification Course</b><span>Intellipaat</span></div><div class="ledger__meta"><time datetime="2026-06-02">2 Jun 2026</time></div></li>
+                <li><div><b>Front-end Web Development</b><span>Reliance Foundation Skilling Academy</span></div><div class="ledger__meta"><time datetime="2026-05-01">1 May 2026</time></div></li>
+                <li><div><b>Software Engineering</b><span>Wingspan</span></div><div class="ledger__meta"><time datetime="2025-12-14">14 Dec 2025</time></div></li>
+                <li><div><b>Comprehensive Linux Training Bundle</b><span>Wingspan</span></div><div class="ledger__meta"><time datetime="2024-10-08">8 Oct 2024</time></div></li>
+                <li><div><b>HTML Training</b><span>Spoken Tutorial Project, IIT Bombay</span><small>1 credit</small></div><div class="ledger__meta"><time datetime="2024-05-20">20 May 2024</time></div></li>
+                <li><div><b>PHP and MySQL Training</b><span>Spoken Tutorial Project, IIT Bombay</span><small>4 credits</small></div><div class="ledger__meta"><time datetime="2023-09-07">7 Sep 2023</time></div></li>
+              </ul>
+            </section>
+
+            <section class="cert-group" data-cat="security" aria-labelledby="cg-security">
+              <h3 class="subhead" id="cg-security">Cyber security</h3>
+              <ul class="ledger glass">
+                <li><div><b>Digital Forensics for Beginners: Collecting, Preserving, and Analyzing Evidence on Windows, Mobile, and Cloud</b><span>Cursa</span><small>8 h 48 min of lessons and 29 pages read</small></div><div class="ledger__meta"><time datetime="2026-06-30">30 Jun 2026</time></div></li>
+                <li><div><b>Complete course in Information Security from zero to advanced</b><span>Cursa</span><small>4 h 52 min of lessons and 86 pages read</small></div><div class="ledger__meta"><time datetime="2026-06-30">30 Jun 2026</time></div></li>
+                <li><div><b>Ethical Hacking: Mobile Platforms and Network Architecture</b><span>Great Learning Academy</span></div><div class="ledger__meta"><time datetime="2025-01">Jan 2025</time><a class="ledger__verify" href="https://www.mygreatlearning.com/certificate/VTVKTODF" target="_blank" rel="noopener noreferrer">Verify<svg class="ico" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></li>
+                <li><div><b>Ethical Hacking, 8-week online training</b><span>Internshala Trainings</span></div><div class="ledger__meta"><time datetime="2024-09-23">23 Sep 2024</time><a class="ledger__verify" href="https://trainings.internshala.com/verify_certificate?certificate_number=6fhyju9l44_" target="_blank" rel="noopener noreferrer">Verify<svg class="ico" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></li>
+              </ul>
+            </section>
+
+            <section class="cert-group" data-cat="skills" aria-labelledby="cg-skills">
+              <h3 class="subhead" id="cg-skills">Professional and general skills</h3>
+              <ul class="ledger glass">
+                <li><div><b>Business Ethics</b><span>NPTEL</span><small>12-week course, final score 88, 4 credits recommended</small></div><div class="ledger__meta"><time datetime="2026-01">Jan to Apr 2026</time></div></li>
+                <li><div><b>Communication Skills</b><span>Reliance Foundation Skilling Academy</span></div><div class="ledger__meta"><time datetime="2026-01-10">10 Jan 2026</time></div></li>
+                <li><div><b>Financial Literacy</b><span>ArthNirmiti</span><small>Certificate of participation</small></div><div class="ledger__meta"><time datetime="2024-10-04">4 Oct 2024</time></div></li>
+                <li><div><b>Digital 101 Journey</b><span>FutureSkills Prime, a MeitY and NASSCOM initiative</span></div><div class="ledger__meta"><time datetime="2023-04-30">30 Apr 2023</time></div></li>
+                <li><div><b>Energy Literacy Training</b><span>Energy Swaraj Foundation</span><small>12 modules</small></div><div class="ledger__meta"><time datetime="2023-04-22">22 Apr 2023</time></div></li>
+              </ul>
+            </section>
+
+            <section class="cert-group" data-cat="internships" aria-labelledby="cg-internships">
+              <h3 class="subhead" id="cg-internships">Internship certificates</h3>
+              <ul class="ledger glass">
+                <li><div><b>Cyber Security Internship</b><span>Vaishnav Technologies</span><small>Three months</small></div><div class="ledger__meta"><time datetime="2025-01">1 Jan to 31 Mar 2025</time></div></li>
+                <li><div><b>Data Science Intern</b><span>Unified Mentor</span><small>Three months</small></div><div class="ledger__meta"><time datetime="2024-06">1 Jun to 1 Sep 2024</time></div></li>
+              </ul>
+            </section>
+
+          </div>
+          <p class="source">The AI-Thon participation certificate is listed under Achievements.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section" id="achievements" aria-labelledby="achievements-title">
+      <div class="section__grid">
+        <div class="section__head">
+          <h2 id="achievements-title">Achievements</h2>
+        </div>
+        <div class="section__body reveal">
+          <ul class="honors">
+            <li>
+              <h3>Participated in AI-Thon</h3>
+              <p>A two-day training and competition event on AI tools, held on 7 and 8 February 2025 at Seshadripuram Degree College, Mysore, in association with Digital Maven. I received a certificate of participation.</p>
+            </li>
+            <li>
+              <h3>Volunteered at the IT Fest</h3>
+              <p>Helped organize and run technical events.</p>
+            </li>
+            <li>
+              <h3>Regular blood donor with the Red Cross</h3>
+              <p>Takes part in recurring blood donation drives.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section__grid">
+        <div class="section__head">
+          <h2 id="contact-title">Contact</h2>
+          <p>Write to me about research, projects or opportunities.</p>
+        </div>
+        <div class="section__body reveal">
+          <div class="mailline">
+            <a class="mailline__addr" href="mailto:vivek28666@gmail.com">vivek28666@gmail.com</a>
+            <button class="btn btn--glass btn--sm" type="button" data-copy-text="vivek28666@gmail.com" data-copied="Email copied"><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg>Copy email</button>
+          </div>
+          <ul class="links-row">
+            <li><a class="btn btn--ghost btn--sm" href="https://www.linkedin.com/in/-vivek-/" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+            <li><a class="btn btn--ghost btn--sm" href="https://github.com/the-vivekkumar" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>GitHub<span class="sr-only"> (opens in a new tab)</span></a></li>
+          </ul>
+
+          <!--
+            EDIT: to receive messages in your inbox without opening an email app, create a free form at https://formspree.io
+            and paste its endpoint (https://formspree.io/f/xxxxxxxx) into data-endpoint below.
+            Leave it empty and the form opens the visitor's email app with the message filled in.
+          -->
+          <form class="form glass" id="contact-form" novalidate data-endpoint="" data-email="vivek28666@gmail.com">
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120">
+              <p class="field__error" id="e-name" hidden></p>
+            </div>
+            <div class="field">
+              <label for="f-email">Your email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160" inputmode="email">
+              <p class="field__error" id="e-email" hidden></p>
+            </div>
+            <div class="field field--wide">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="5" required maxlength="3000"></textarea>
+              <p class="field__error" id="e-message" hidden></p>
+            </div>
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="form__foot">
+              <button class="btn btn--primary" type="submit">Send message</button>
+              <p class="form__hint" id="form-hint">Sending opens your email app with the message ready to go.</p>
+            </div>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <p class="footer__name">Vivek T K</p>
+      <p class="footer__copy">&copy; <span id="year">2026</span> Vivek T K. All rights reserved.</p>
+      <ul class="footer__links">
+        <li><a href="https://github.com/the-vivekkumar" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="https://www.linkedin.com/in/-vivek-/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="mailto:vivek28666@gmail.com">Email</a></li>
+        <li><a href="../Vivek_T_K_Resume.pdf" download>Resume</a></li>
+        <li><a href="../Vivek_T_K_CV.pdf" download>CV</a></li>
+        <li><a href="../">View the 3D version</a></li>
+      </ul>
+      <a class="footer__top" href="#top"><svg class="ico" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/landing-core.js" defer></script>
+  <script src="assets/js/landing-sim.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
