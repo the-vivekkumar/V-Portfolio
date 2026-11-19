@@ -1,56 +1,73 @@
 # 👨‍💻 Vivek T K | 3D Interactive Portfolio
 
-### 🚀 Exploring Technology • Building Ideas • Creating Impact
+\<p align="center">
+&#x20; \<img src="[https://img.shields.io/badge/Portfolio-3D%20Interactive-blueviolet?style=for-the-badge](https://img.shields.io/badge/Portfolio-3D%20Interactive-blueviolet?style=for-the-badge)" alt="3D Portfolio">
+&#x20; \<img src="[https://img.shields.io/badge/Status-Live-success?style=for-the-badge](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)" alt="Live">
+&#x20; \<img src="[https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)" alt="License">
+\</p>
 
-Welcome to my personal portfolio! I'm **Vivek T K**, an MCA student passionate about technology, software development, Artificial Intelligence, and innovative problem-solving.
+\<h3 align="center">🚀 Exploring Technology | Building Ideas | Creating Impact\</h3>
 
-This portfolio showcases my technical journey, projects, skills, and interests through an interactive 3D web experience.
+\<p align="center">
+&#x20; A modern, interactive 3D portfolio showcasing my technical journey, skills, projects, and passion for innovation.
+\</p>
 
-🌐 **Live Portfolio:** [Explore My Portfolio](https://the-vivekkumar.github.io/V-Portfolio/)
-
-💻 **GitHub:** [@the-vivekkumar](https://github.com/the-vivekkumar)
+\<p align="center">
+&#x20; 🌐 \<a href="[https://the-vivekkumar.github.io/V-Portfolio/](https://the-vivekkumar.github.io/V-Portfolio/)">View Live Portfolio\</a> •
+&#x20; 💻 \<a href="[https://github.com/the-vivekkumar](https://github.com/the-vivekkumar)">GitHub Profile\</a>
+\</p>
 
 ---
 
 ## 👨‍🚀 About Me
 
-I'm an aspiring technology professional with a strong interest in exploring emerging technologies and developing innovative solutions.
+Hello! I'm **Vivek T K**, an MCA student passionate about technology, software development, Artificial Intelligence, and innovative problem-solving.
 
-- 🎓 MCA Student
-- 🤖 Interested in Artificial Intelligence and Machine Learning
-- 💻 Passionate about Software Development
-- 🚀 Exploring 3D Web Experiences and Interactive Technologies
-- 🧠 Focused on continuous learning and problem-solving
+I enjoy exploring emerging technologies, experimenting with creative ideas, and developing solutions that combine functionality with modern design.
 
-My goal is to transform creative ideas into meaningful technological solutions.
+My journey is driven by curiosity, continuous learning, and the ambition to turn ideas into meaningful technological experiences.
+
+### 🎯 Areas of Interest
+
+- 🤖 Artificial Intelligence & Machine Learning
+- 💻 Software Development
+- 🌐 Web Development
+- 🦾 Robotics & Autonomous Systems
+- 🧠 Innovative Problem-Solving
+- 🚀 Emerging Technologies
 
 ---
 
 ## ✨ Portfolio Highlights
 
-- 🌌 **Interactive 3D Experience** – Explore a visually engaging 3D portfolio.
-- 👨‍💻 **About Me** – Learn about my background and technical interests.
-- 🛠️ **Technical Skills** – Discover my technologies and areas of expertise.
-- 🚀 **Projects** – Explore my development work and experiments.
-- 📬 **Connect With Me** – Find my professional and developer profiles.
+| Feature                      | Description                                     |
+| ---------------------------- | ----------------------------------------------- |
+| 🌌 Interactive 3D Experience | Immersive 3D web environment                    |
+| 👨‍💻 About Me               | Personal introduction and background            |
+| 🛠️ Technical Skills         | Technologies and areas of expertise             |
+| 🚀 Projects                  | Development projects and experiments            |
+| 📬 Contact                   | Connect and explore collaboration opportunities |
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technology Stack
 
-| Technology | Purpose |
-|---|---|
-| HTML5 | Web Structure |
-| CSS3 | Styling and Animations |
-| JavaScript | Application Logic |
-| Vite | Development and Build Tool |
-| 3D Web Technologies | Interactive Visual Experience |
+The portfolio uses modern web technologies to deliver an interactive experience.
+
+| Technology        | Purpose                    |
+| ----------------- | -------------------------- |
+| HTML5             | Web Structure              |
+| CSS3              | Styling and Animations     |
+| JavaScript        | Application Logic          |
+| Vite              | Development and Build Tool |
+| Three.js          | 3D Graphics                |
+| React Three Fiber | 3D Integration with React  |
 
 ---
 
 ## ⚙️ Run Locally
 
-Want to explore or run this portfolio on your machine?
+Follow these steps to run the portfolio on your local machine.
 
 **1. Clone the repository**
 
@@ -58,7 +75,7 @@ Want to explore or run this portfolio on your machine?
 git clone https://github.com/the-vivekkumar/V-Portfolio.git
 ```
 
-**2. Navigate to the project**
+**2. Navigate to the project directory**
 
 ```bash
 cd V-Portfolio
@@ -84,23 +101,62 @@ npm run build
 
 ---
 
-## 🎯 My Vision
+## 📂 Project Structure
 
-To continuously learn, experiment with emerging technologies, develop impactful projects, and grow as a technology professional.
-
-I believe in learning by building, improving through challenges, and turning ideas into reality.
+```text
+V-Portfolio/
+│
+├── public/             # Static assets
+├── src/                # Application source code
+├── dist/               # Production build output
+├── .github/            # GitHub configuration
+├── index.html          # Main HTML entry point
+├── package.json        # Project dependencies
+├── vite.config.js      # Vite configuration
+└── README.md           # Project documentation
+```
 
 ---
 
-## 🤝 Let's Connect
+## 🌟 Vision
 
-I'm always interested in technology, innovation, collaboration, and new opportunities.
+My vision is to continuously explore new technologies, build innovative solutions, and contribute to meaningful projects.
 
-- 💻 **GitHub:** [the-vivekkumar](https://github.com/the-vivekkumar)
-- 🌐 **Portfolio:** [Visit My Website](https://the-vivekkumar.github.io/V-Portfolio/)
+I believe in:
+
+- 💡 Learning by building.
+- 🔍 Exploring beyond limitations.
+- ⚡ Turning ideas into reality.
+- 🌱 Improving through continuous learning.
+- 🤝 Growing through collaboration.
 
 ---
 
-⭐ **Thanks for visiting my GitHub profile and exploring my portfolio!**
+## 🤝 Connect With Me
 
-*Built with curiosity, creativity, and a passion for technology. 🚀*
+I'm always interested in technology, innovation, collaboration, and opportunities to learn and grow.
+
+\<p>
+&#x20; 💻 \<b>GitHub:\</b> \<a href="[https://github.com/the-vivekkumar](https://github.com/the-vivekkumar)">the-vivekkumar\</a>
+\</p>
+\<p>
+&#x20; 🌐 \<b>Portfolio:\</b> \<a href="[https://the-vivekkumar.github.io/V-Portfolio/](https://the-vivekkumar.github.io/V-Portfolio/)">Visit My Website\</a>
+\</p>
+
+---
+
+## 📜 Copyright & License
+
+**Copyright © 2026 Vivek T K. All Rights Reserved.**
+
+The original design, source code, content, and creative elements of this portfolio are protected by copyright.
+
+No permission is granted to copy, reproduce, redistribute, modify, or commercially use the original work without prior written permission from the copyright owner, except where permitted by applicable law.
+
+Third-party libraries, frameworks, and assets remain subject to their respective licenses and ownership rights.
+
+---
+
+\<p align="center">   ⭐ If you find my work interesting, feel free to explore my portfolio and GitHub projects! \</p>
+
+\<p align="center">   \<b>Built with curiosity, creativity, and a passion for technology. 🚀\</b> \</p>
